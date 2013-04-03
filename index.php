@@ -1,12 +1,7 @@
-<html>
-<body>
+<?php session_start();
+include_once('header.php');
 
-<form action="welcome.php" method="post">
-Name: <input type="text" name="fname">
-Age: <input type="text" name="age">
-Email: <input type="text" name="email">
-<input type="submit">
-</form>
+unset($_SESSION['userid']);
+new MainUI("");
 
-</body>
-</html>
+?>
